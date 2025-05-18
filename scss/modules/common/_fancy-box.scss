@@ -1,0 +1,66 @@
+@use '../../root' as *;
+@use '../../utilities' as *;
+
+.fancy-box1 {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  &:not(:last-child) {
+      margin-bottom: 30px;
+  }
+  &__item {
+    h6 {
+      color: $title-color;
+      font-family: $body-font;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 30px; /* 150% */ 
+      padding-bottom: 5px;
+    }
+
+    p {
+      color: rgba(31, 31, 31, 0.70);
+      font-family: $body-font;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 30px; 
+    }
+  }
+}
+
+  
+.fancy-box2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+  
+      &__item {
+        h6 {
+          color: $title-color;
+          font-family: $body-font;
+          font-size: 20px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: 24px; 
+          padding-bottom: 10px;
+        }
+  
+        p {
+          color: $title-color;
+          font-family: $body-font;
+          font-size: 15px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: normal;
+          text-transform: uppercase;
+          opacity: 0.6;
+        }
+      }
+  }
+
+
+
+

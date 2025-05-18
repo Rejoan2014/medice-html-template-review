@@ -1,0 +1,117 @@
+@use '../../root' as *;
+@use '../../utilities' as *;
+
+//>>>>> Breadcrumb Start <<<<<//
+.breadcrumb {
+    overflow: hidden;
+    background-color: $title-color;
+    padding: 180px 0 165px 0;
+    margin: 0 auto;
+    margin-top: 95px;
+    border-radius: 20px;
+
+
+    position: relative;
+	overflow: hidden;
+	&::before {
+		@include before;
+        border-radius: 20px;
+        background: linear-gradient(180deg, rgba(9, 50, 36, 0.00) 0%, #093224 91.66%);
+        @include breakpoint (max-md) {
+            border-radius: 10px;
+        }  
+	}
+  
+    @include breakpoint (max-md) {
+        padding: 100px 0 100px 0;
+        border-radius: 10px;
+    }  
+  
+    &-heading {
+        position: absolute;
+        bottom: 0;
+        z-index: 6;
+        display: inline-block;
+    
+        h1 {
+            color: $white;
+            font-family: $body-font;
+            font-size: 90px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+            text-align: center;
+            padding-bottom: 30px;
+            @include breakpoint (max-lg) {
+                font-size: 75px;
+                line-height: normal;
+            }
+            @include breakpoint (max-md) {
+                font-size: 42px;
+                line-height: 42px;
+            }
+        }
+        &__items {
+            border-radius: 10px 10px 0px 0px;
+            background: $white;
+            display: inline-flex;
+            padding: 20px 30px;
+            align-items: center;
+            justify-content: center;
+            gap: 5px;
+            list-style-type: none;
+    
+            @include breakpoint (max-md) {
+            margin-top: 15px;
+            padding: 7px 20px;
+            }
+    
+            li {
+                color: rgba(31, 31, 31, 0.80);
+                font-family: $body-font;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 26px; /* 144.444% */
+                text-align: center;
+                &:hover {
+                    color: $theme-color;
+                }
+        
+                a {
+                    color: rgba(31, 31, 31, 0.80);
+                    @include transition;
+        
+                    &:hover {
+                        color: $theme-color;
+                    }
+                }
+        
+                i {
+                    color: $white;
+                    text-align: center;
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 900;
+                    line-height: normal;
+                }
+            }
+        }  
+    }
+    &-shape1 {
+        position: absolute;
+        left: 3%;
+        z-index: 5;
+        @include breakpoint (max-xl){
+            display: none;
+        }
+    }
+    &-shape2 {
+        position: absolute;
+        right: -6%;
+        z-index: 5;
+        @include breakpoint (max-xl){
+            display: none;
+        }
+    }
+}

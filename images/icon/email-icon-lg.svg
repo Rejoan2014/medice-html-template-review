@@ -1,0 +1,11 @@
+<svg width="52" height="52" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="icon_bg">
+<path id="bg" d="M26 0.5C40.0833 0.5 51.5 11.9167 51.5 26C51.5 40.0833 40.0833 51.5 26 51.5C11.9167 51.5 0.5 40.0833 0.5 26C0.5 11.9167 11.9167 0.5 26 0.5Z" stroke="white" stroke-opacity="0.12"/>
+<g id="icon">
+<path id="Vector" d="M17 22.7059C17 19.4118 18.8824 18 21.7059 18H31.1176C33.9412 18 35.8235 19.4118 35.8235 22.7059V29.2941C35.8235 32.5882 33.9412 34 31.1176 34H21.7059" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_2" d="M31.1168 23.1758L28.171 25.5284C27.2015 26.3001 25.611 26.3001 24.6415 25.5284L21.7051 23.1758" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_3" d="M17 30.2344H22.6471" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_4" d="M17 26.4688H19.8235" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+</g>
+</svg>

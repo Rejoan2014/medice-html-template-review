@@ -1,0 +1,110 @@
+@use '../../root' as *;
+@use '../../utilities' as *;
+
+.about3 {
+    @include breakpoint (max-xl){
+        padding-top: 30px;
+    }
+    &-thumb {
+        position: relative;
+        border-radius: 10px;
+        &__img {
+            position: relative;
+            z-index: 5;
+            text-align: end;
+            border-radius: 10px;
+            @include breakpoint (max-xl){
+                text-align: start;
+            }
+        }
+        &-content {
+            position: absolute;
+            z-index: 7;
+            left: 20%;
+            bottom: 12%;         
+            border-radius: 10px;
+            background: $white;
+            box-shadow: 0px 10px 40px 0px rgba(31, 31, 31, 0.20);
+            backdrop-filter: blur(45px);
+            padding: 30px 30px;
+            max-width: 360px;
+            @include breakpoint (max-xl){
+                left: 0;
+            }
+            &__title {
+                color: $title-color;
+                font-family: $body-font;
+                font-size: 22px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+                padding-top: 20px;
+                padding-bottom: 30px;
+            }
+            &__desc {
+                color: $title-color;
+                font-family: $body-font;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 26px; 
+                opacity: 0.7;
+            }
+            
+        }
+        &__text {
+            position: absolute;
+            top: 15px;
+            left: -6%;
+            z-index: 1;
+            @include breakpoint (max-sm){
+                display: none;
+            }
+        }
+    }
+    &-content {
+        padding-top: 30px;
+        @include breakpoint (max-xl) {
+            padding-top: 20px;
+        }
+        &-checklist {
+            border-top: 1px solid rgba(31, 31, 31, 0.12);
+            padding-top: 30px;
+            padding-bottom: 48px;
+            &-item {
+                display: flex;
+                align-items: center;
+                gap: 16px;
+                &__text {
+                    color: $title-color;
+                    font-feature-settings: 'case' on, 'cpsp' on;
+                    font-family: $body-font;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 34px;
+                    opacity: 0.7;
+                }
+            }
+        }
+        &-btn {
+            &__link {
+                padding-left: 5px;
+                color: $title-color;
+                font-family: $body-font;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+                text-decoration-line: underline;
+                text-decoration-style: solid;
+                text-decoration-skip-ink: none;
+                text-decoration-thickness: 6%; /* 0.96px */
+                text-underline-offset: 16%; /* 2.56px */
+                text-underline-position: from-font;
+            }
+        }
+    }
+}
+
+  

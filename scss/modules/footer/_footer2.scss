@@ -1,0 +1,280 @@
+@use '../../root' as *;
+@use '../../utilities' as *;
+
+
+/*----------------------------------------------
+    # Footer style here
+----------------------------------------------*/
+
+.footer2 {
+  position: relative;
+  &-wrapper {   
+    position: relative;
+    z-index: 9;
+    &-logoInfo {
+      padding-bottom: 70px;
+      padding-top: 10px;
+      @include breakpoint (max-lg){
+        padding-bottom: 25px;
+      }
+      &__logo {
+        padding-bottom: 24px;
+      }
+      &__desc {
+        color: $white;
+        font-family: $body-font;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 26px; 
+        opacity: 0.7;
+        padding-bottom: 22px;
+      }
+    }
+
+    &-service {
+      padding-bottom: 70px;
+      padding-top: 10px;
+      @include breakpoint (xxl){
+        padding-left: 65px;
+      }
+      @include breakpoint (max-lg){
+        padding-bottom: 25px;
+      }
+      @include breakpoint (max-md){
+        padding-bottom: 5px;
+        padding-top: 7px;
+      }
+      &__title {
+        color: $white;
+        font-family: $body-font;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 34px;
+        padding-bottom: 27px;
+      }
+      &-list {
+        &__item { 
+          display: flex;
+          align-items: center;   
+          &:not(:last-child) {
+            padding-bottom: 0px;
+          }
+          a {
+            color: rgba(255, 255, 255, 0.70);
+            font-family: $body-font;
+            font-size: 15px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 40px; 
+            &:hover {
+              color: $theme-color;
+            }
+          }
+          img {
+            padding-right: 10px;
+          }
+        }
+      }
+    }
+    &-link {
+      padding-bottom: 70px;
+      padding-top: 10px;
+      @include breakpoint (max-lg){
+        padding-bottom: 25px;
+      }
+      &__title {
+        color: $white;
+        font-family: $body-font;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 30px; /* 150% */
+        padding-bottom: 27px;
+      }
+      &-list {
+        &__item {    
+          &:not(:last-child) {
+            padding-bottom: 10px;
+          }
+          a {
+            color: $white;
+            font-family: $body-font;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 26px;
+            &:hover {
+              color: $theme-color;
+            }
+          }
+          img {
+            padding-right: 10px;
+          }
+        }
+      }
+    }    
+    &-contact {
+      padding-bottom: 100px;
+      padding-top: 10px;
+      @include breakpoint (max-md){
+        padding-bottom: 0px;
+        padding-top: 7px;
+      }
+      &__title {
+        color: $white;
+        font-family: $body-font;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 34px;
+        padding-bottom: 27px;
+      }
+      &-list {
+        &__item {    
+          &:not(:last-child) {
+            padding-bottom: 20px;
+          }
+          a {
+            display: flex !important;
+            align-items: center !important;
+            color: rgba(255, 255, 255, 0.70);
+            font-family: $body-font;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 30px; /* 166.667% */
+            &:hover {
+              color: $theme-color;
+            }
+
+            img {
+              padding-right: 10px;
+            }
+            .icon {
+              flex: none;
+            }
+          }
+        }
+      }
+    }
+    &-posts {
+      padding-bottom: 100px;
+      padding-top: 10px;
+      @include breakpoint (max-md){
+        padding-bottom: 25px;
+      }
+      &__title {
+        color: $white;
+        font-family: $body-font;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 34px;
+        padding-bottom: 27px;
+      }
+      &-list {
+        &__item {   
+          display: flex;
+          align-items: center;
+          gap: 14px; 
+          &:not(:last-child) {
+            padding-bottom: 32px;
+          }
+          .icon {
+            flex: none;
+          }
+          &__desc {
+            display: flex;
+            flex-direction: column;
+            color: $white;
+            font-family: $body-font;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 26px; 
+
+            .meta-date {
+              color: rgba(255, 255, 255, 0.70);
+              font-family: $body-font;
+              font-size: 15px;
+              font-style: normal;
+              font-weight: 500;
+              line-height: 30px; /* 200% */
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &-bottom {
+    background: $bg-color6;
+    position: relative;
+    z-index: 9;
+
+    &-info {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      border-top: 1px solid rgba(255, 255, 255, 0.10);
+      padding: 20px;
+      @include breakpoint (lg){
+        flex-direction: row;
+        gap: 10px;
+      }
+      @include breakpoint (max-xs){
+        padding: 10px;
+      }
+  
+      p {
+        color: rgba(255, 255, 255, 0.70);
+        font-family: $body-font;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 30px;
+        @include breakpoint (max-xs){
+          font-size: 14px;
+        }
+        @include breakpoint (max-xxsmall){
+          font-size: 12px;
+        }
+  
+        span {
+          color: $yellow;
+        }
+      }
+  
+      &__links {
+        a {
+          color: rgba(255, 255, 255, 0.70);
+          font-family: $body-font;
+          font-size: 18px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 30px; 
+  
+          &:not(:last-child) {
+            padding-right: 20px;
+          }
+          @include breakpoint (max-xs){
+            font-size: 14px;
+          }
+          @include breakpoint (max-xxsmall){
+            font-size: 12px;
+          }
+  
+          &:hover {
+            color: white;
+          }
+  
+        }
+      }
+    }
+    }
+  }
+  
+

@@ -1,0 +1,177 @@
+@use '../../root' as *;
+@use '../../utilities' as *;
+
+
+/*----------------------------------------------
+    # Faq style here
+----------------------------------------------*/
+
+.faq-content {
+    margin-top: 0;
+  
+    .accordion-item {
+      margin-bottom: 25px;
+      border-radius: 6px;
+      border: 1px solid rgba(31, 31, 31, 0.12);
+      overflow: hidden;
+  
+      .accordion-header {
+        .accordion-button {
+          height: 60px;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+  
+          border: none;
+          border-radius: 0;
+          box-shadow: none;
+          background: #4D7B6B;
+
+          color: $white;
+          font-family: $body-font;
+          font-size: 22px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: 28px;
+
+          padding: 0 30px;
+          @include breakpoint (max-sm) {
+            font-size: 18px;
+          }
+          @include breakpoint (max-xsmall) {
+            font-size: 16px;
+          }
+  
+          &.collapsed {
+            padding: 0 30px;
+            background: $white;
+            color: $title-color;
+          }
+  
+          &:after {
+            font-weight: 500;
+            transition: all 0.3s ease-in-out !important;
+            background-image: url(../images/icon/faq1.svg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 18px 18px;
+          }
+  
+          &:not(.collapsed):after {
+            background-image: url(../images/icon/faq2.svg);
+            transform: rotate(0deg);
+          }
+        }
+      }
+  
+      .accordion-collapse {
+        border: none;
+  
+        .accordion-body {
+          padding: 20px 30px 23px;
+          background-color: $theme-color2;
+          box-shadow: 0px 1px 2px 0px rgba(13, 18, 30, 0.08);
+          color: $white;
+          font-family: $body-font;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 26px;
+  
+          @include breakpoint(max-xxl) {
+            padding-right: 50px;
+          }
+  
+          @include breakpoint(max-lg) {
+            padding-right: 30px;
+          }
+          @include breakpoint (max-sm) {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+
+.faq-content2 {
+    margin-top: 0;  
+    .accordion-item {
+      margin-bottom: 25px;
+      border-radius: 10px;
+      background: $white;
+      box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
+      overflow: hidden;
+  
+      .accordion-header {
+        .accordion-button {
+          height: 60px;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+  
+          border: none;
+          background: $white;
+          box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
+          color: var(--Text-color-Title-color, #010F34);
+          font-family: Raleway;
+          font-size: 18px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: 28px; 
+          padding: 0 30px;
+          @include breakpoint (max-sm) {
+            font-size: 16px;
+          }
+          @include breakpoint (max-xsmall) {
+            font-size: 14px;
+            line-height: 18px;
+          }
+  
+          &.collapsed {
+            padding: 0 30px;
+          }
+  
+          &:after {
+            font-weight: 500;
+            transition: all 0.3s ease-in-out !important;
+            background-image: url(../images/icon/faq-icon1.svg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 18px 18px;
+          }
+  
+          &:not(.collapsed):after {
+            background-image: url(../images/icon/faq-icon2.svg);
+            transform: rotate(0deg);
+          }
+        }
+      }
+  
+      .accordion-collapse {
+        border: none;
+  
+        .accordion-body {
+          padding: 20px 30px 23px;
+          background-color: $white;
+          color: $gray;
+          font-family: $faq-font;
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 26px;
+  
+          @include breakpoint(max-xxl) {
+            padding-right: 50px;
+          }
+  
+          @include breakpoint(max-lg) {
+            padding-right: 30px;
+          }
+          @include breakpoint (max-sm) {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+  
+  

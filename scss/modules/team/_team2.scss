@@ -1,0 +1,132 @@
+@use '../../root' as *;
+@use '../../utilities' as *;
+
+.team2 {
+    &-card {
+        position: relative;
+        background: $bg-color;
+
+        &-thumb {
+            position: relative;
+            &__img {
+                position: relative;
+                padding: 31px 30px 0;
+                text-align: center;
+                &-shape {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    z-index: 1;
+                }
+                img {
+                    position: relative;
+                    z-index: 5;
+                    width: 252px;
+                    height: 320px;
+                }
+            }
+            &__ratting {
+                position: absolute;
+                top: 20px;
+                left: 20px;            
+                z-index: 9;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 7px;
+                border-radius: 50px;
+                background: #F5D04A;
+                width: 75px;
+                height: 30px;
+                flex-shrink: 0;
+                color: $title-color;
+                font-family: $body-font;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 26px; /* 162.5% */
+            }
+            &__link {
+                opacity: 0;
+                visibility: hidden;
+                display: flex;
+                align-items: center;
+                gap: 5px;
+                position: absolute;
+                top: 50%;
+                left: 30%;            
+                z-index: 9;
+                img {
+                    border-radius: 30px;
+                     background: $title-color2;
+                    padding: 9px;
+                    width: 32px;
+                    height: 32px;
+                    flex-shrink: 0;
+                }
+                p {
+                    display: flex;
+                    align-items: center;
+                    padding: 10px 20px;
+                    border-radius: 30px;
+                     background: $title-color2;
+                    color: $title-color;
+                    font-family: $body-font;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 56px; /* 350% */
+                    width: 101px;
+                    height: 32px;
+                }
+            }
+
+        }
+        &-content {
+            text-align: center;
+            padding: 25px 30px 25px;
+            background: #D9EADE;
+            &__title {
+                color: $title-color;
+                text-align: center;
+                font-family: $body-font;
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 24px; /* 120% */
+                padding-bottom: 8px;
+            }
+            &__desc {
+                color: $title-color;
+                text-align: center;
+                font-family: $body-font;
+                font-size: 15px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+                text-transform: uppercase;
+                opacity: 0.6;
+            }
+        }
+        &:hover {
+            .team1 {
+                &-card {
+                    &-thumb {
+                        &__img {            
+                            &::before {
+                                opacity: 1;
+                                visibility: visible;
+                                @include transition;
+                            }
+                        }
+                        &__link {
+                            opacity: 1;
+                            visibility: visible;
+                            @include transition;
+                        }
+                    }
+                }
+            }            
+        }
+    }
+}

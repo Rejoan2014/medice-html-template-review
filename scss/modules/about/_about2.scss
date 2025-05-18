@@ -1,0 +1,180 @@
+@use '../../root' as *;
+@use '../../utilities' as *;
+
+.about2 {
+    .pb-75 {
+        @include breakpoint (max-lg){
+            padding-bottom: 35px;
+        }
+    }
+    &-experience {
+        &-info {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            @include breakpoint (max-xl){
+                padding-top: 25px;
+            }
+            &__numb {
+                color: $theme-color2;
+                font-family: $body-font;
+                font-size: 200px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 56px; /* 28% */
+                letter-spacing: -20px;
+                margin-bottom: 45px;
+                @include breakpoint (max-xl){
+                    font-size: 150px;
+                    line-height: 45px;
+                }
+                @include breakpoint (max-lg){
+                    font-size: 110px;
+                    margin-bottom: 26px;
+                }
+            }
+            img {
+                @include breakpoint (max-lg){
+                    width: 48px;
+                }
+            }
+            &__text {
+                color: $theme-color2;
+                font-family: $body-font;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 24px; 
+                text-transform: uppercase;
+            }
+        }
+    }
+    &-card {
+        position: relative;
+        &-thumb {
+            position: relative;
+            &__img {
+                position: relative;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                z-index: 1;
+                width: 100%;
+
+                &::before {
+                    content: '';
+                    position: absolute;
+                    z-index: 7;
+                    inset: 0;
+                    border-radius: 6px;
+                    background: linear-gradient(180deg, rgba(255, 255, 255, 0.00) 24.78%, #FFF 100%);
+                }
+                img {
+                    position: relative;
+                    border-radius: 6px;
+                    z-index: 5;
+                    width: 100%;
+                }
+            }
+            &-info {
+                position: relative;
+                z-index: 10;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                margin-top: -111px;
+                &__title {
+                    color: $theme-color2;
+                    font-family: $body-font;
+                    font-size: 160px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: 165px; 
+                    @include breakpoint (max-xl){
+                        font-size: 120px;
+                        line-height: 140px;
+                    }
+                    @include breakpoint (max-lg){
+                        font-size: 90px;
+                        line-height: 115px;
+                    }
+                    @include breakpoint (max-xs){
+                        font-size: 75px;
+                        line-height: 85px;
+                    }
+
+                }
+                &__desc {
+                    color: $title-color;
+                    text-align: center;
+                    font-family: $body-font;
+                    font-size: 30px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 36px; 
+                    max-width: 252px;
+                }
+            }
+        }
+        &-content {
+            padding: 100px 80px;
+            background: $bg-color;
+            @include breakpoint (max-xl){
+                padding: 60px 40px;
+            }
+            @include breakpoint (max-lg){
+                padding: 40px 30px;
+            }
+            &__icon {
+                padding-bottom: 40px;
+            }
+            &__title {
+                color: $title-color;
+                font-family: $body-font;
+                font-size: 30px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 36px;
+                padding-bottom: 45px;
+                span {
+                    color: $theme-color2;
+                }
+            }
+            &-list {
+                padding-bottom: 35px;
+                &__item {
+                    padding-bottom: 24px;
+                    display: flex;
+                    align-items: center;
+                    gap: 22px;
+                    color: $title-color;
+                    font-family: $body-font;
+                    font-size: 18px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 24px; /* 133.333% */
+                }
+            }
+            &__btn {
+                display: inline-flex;
+                gap: 15px;
+                color: $white;
+                font-family: $body-font;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+                padding: 17px 24px;
+                border-radius: 6px;
+                background: #1F1F1F;
+                &:hover {
+                    background: $theme-color;
+                    color: $white;
+                }
+            }
+        }
+    }
+}
+
+  

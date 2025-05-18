@@ -1,0 +1,16 @@
+@use '../root' as *;
+@use '../utilities' as *;
+
+
+.brandLogo1 {
+    margin: 50px 0;
+}
+.brandLogo2 {
+    position: relative;
+    z-index: 9;
+    margin-bottom: -69px;
+    &-slider {
+        padding: 30px 80px;
+         background: $title-color2;
+    }
+}

@@ -1,0 +1,365 @@
+@use '../root' as *;
+
+/*----------------------------------------------
+    # Helping  style here
+----------------------------------------------*/
+//page scroll bar add
+::-webkit-scrollbar {
+	width: 10px;
+	height: 4px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+	box-shadow: inset 0 0 5px $theme-color;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: $theme-color;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+//page scroll bar add
+
+//Basic Code Start
+.fix {
+  overflow: hidden;
+}
+
+.ralt{
+ position: relative;
+}
+
+//Basic Code End
+
+//Video Css Start
+.ripple {
+  position: relative;
+
+  &::before,&::after {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      width: 60px;
+      height: 60px;
+      -webkit-transform: translateX(-50%) translateY(-50%);
+      transform: translateX(-50%) translateY(-50%);
+      border-radius: 50%;
+      box-shadow: 0 0 0 0 rgba(56, 75, 255, 0.5);
+      -webkit-animation: rippleOne 3s infinite;
+      animation: rippleOne 3s infinite;
+  }
+
+  &::before {
+      -webkit-animation-delay: 0.9s;
+      animation-delay: 0.9s;
+      content: "";
+      position: absolute;
+      right: 0;
+      bottom: 0;
+  }
+
+  &::after {
+      -webkit-animation-delay: 0.6s;
+      animation-delay: 0.6s;
+      content: "";
+      position: absolute;
+      right: 0;
+      bottom: 0;
+  }
+}
+//Video Css End
+
+/* background */
+.bg-cover {
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  background-position: center;
+}
+
+// Padding
+.section-padding {
+  padding: 120px 0;
+  @include breakpoint(max-lg) {
+    padding: 80px 0;
+  }
+}
+
+.section-margin {
+  margin: 120px 0;
+  @include breakpoint(max-lg) {
+    margin: 80px 0;
+  }
+}
+
+@include breakpoint (lg){  
+  .fix-header {
+    padding-top: 45px;
+  }
+}
+
+.custom-flex {
+  display: flex;
+  gap: 30px;
+}
+
+// Margin
+.mb-120 {
+  margin-bottom: 120px;
+  @include breakpoint(max-lg) {
+    margin-bottom: 80px;
+  }
+
+}
+
+// Padding
+.pt-128 {
+  padding-top: 25px;
+  @include breakpoint (xxl){
+    padding-top: 128px;
+  }
+}
+.pt-120 {
+  padding-top: 120px;
+  @include breakpoint (max-xl){
+    padding-top: 30px;
+  }
+}
+.pb-30 {
+  padding-bottom: 30px !important;
+}
+.pb-52 {
+  @include breakpoint(lg){
+    padding-bottom: 52px;
+  }
+}
+
+.pb-55 {
+  padding-bottom: 55px !important;
+}
+.pb-96 {
+  @include breakpoint (xl3){
+    padding-bottom: 96px !important;
+  }
+}
+.pb-140 {
+  padding-bottom: 140px;
+  @include breakpoint(max-lg) {
+    padding: 80px 0;
+  }
+}
+
+.pl-22 {
+  padding-left: 22px;
+}
+.pr-320 {
+  padding-right: 320px;
+  @include breakpoint (max-xxxl){
+    padding-right: 0px;
+  }
+
+}
+
+.pb-160 {
+  padding-bottom: 160px;
+  @include breakpoint (max-xxl){
+    padding-bottom: 80px;
+  }
+}
+.mb-25 {
+  margin-bottom: 25px;
+}
+.mb-35 {
+  margin-bottom: 35px;
+}
+.mr-10 {
+  margin-right: 10px;
+}
+.mt-30 {
+  margin-top: 30px;
+}
+.mt-55 {
+  margin-top: 55px;
+  @include breakpoint (max-xl3){
+    // margin-top: 30px;
+  }
+}
+.mt-100 {
+  margin-top: 100px;
+}
+.mxw-683 {
+  max-width: 683px;
+}
+.mxw-640 {
+  max-width: 640px;
+}
+
+.brandLogo-fix {
+  margin-bottom: -82px;
+}
+.d-none-fix {
+  @include breakpoint (max-lg){
+    display: none !important;
+  }
+}
+
+.feature1-padding {
+  padding-bottom: 100px;
+  @include breakpoint (max-lg){
+    padding-bottom: 0px;
+  }
+}
+
+.project1-padding {
+  padding: 120px 0;
+  @include breakpoint(max-xl) {
+    padding: 60px 0;
+  }
+  @include breakpoint(max-lg) {
+    padding-bottom: 0px;
+  }
+}
+
+.about-fix {
+  @include breakpoint (xl){
+    padding-left: 52px;
+  }
+}
+
+.wcu-padding {
+  padding: 120px 0;
+  @include breakpoint(max-xxxl) {
+    padding: 92px 0;
+  }
+}
+
+.team3-padding {
+  padding: 100px 0;
+  @include breakpoint(max-xxl) {
+    padding: 45px 0;
+  }
+}
+.body-fix {
+  padding: 0 50px;
+  @include breakpoint (max-xxl){
+    padding: 0 30px;
+  }
+  @include breakpoint (max-md){
+    padding: 0 5px;
+  }
+}
+
+//Colors
+.bg-theme {
+  background-color: $theme-color !important;
+}
+
+.bg-theme2 {
+  background-color: $black !important;
+}
+.bg-color1 {
+  border-radius: 10px;
+  background: $smoke2;
+  // padding: 45px 60px;
+}
+.bg-white {
+  background: $white !important;
+}
+.footer1-bg {
+  background: #09243C;
+}
+.footer2-bg {
+  background: #464E3D;
+}
+
+.servic2-bg {
+  background: linear-gradient(270deg, #ECF1F5 0%, rgba(255, 255, 255, 0.80) 67.14%, rgba(255, 255, 255, 0.00) 100%);
+  @include breakpoint (max-xl) {
+    background: linear-gradient(270deg, #ECF1F5 0%);
+  }
+}
+.servic3-bg {
+  background: linear-gradient(270deg, #ECF1F5 0%);
+}
+
+.bor-top1 {
+  border-top: 1px solid rgb(69, 69, 72);
+}
+
+.cap {
+  text-transform: capitalize !important;
+  i {
+    transform: rotate(0deg) !important;
+  }
+}
+
+.nav-pills {
+  border: 1px solid $border-color;
+  border-radius: 50px;
+  display: flex; 
+  display: inline-block;
+
+  .nav-item {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .nav-link {
+    color: $theme-color;				  
+    font-family: $body-font;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px; 
+    border: 0;
+    flex: 1; 
+    text-align: center;
+    padding: 8px 32px;
+    transition: all 0.3s ease;
+    border-radius: 0; 
+  
+    &.active {
+    background: $theme-color;
+    color: $white;
+    }
+  
+    &:first-child.active {
+      border-radius: 30px;
+
+    }
+  
+    &:last-child.active {
+      border-radius: 30px;
+    }
+  }
+}		
+
+.section-underline {
+  height: 3px;
+  background: linear-gradient(to right, #3CA200 30px, #D8DDE1 0);
+  width: 100%;
+  border-radius: 2px;
+  border-radius: 20px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+}
+
+.hr-testi {
+  width: 100%;
+  height: 1px;
+  background: rgba(31, 31, 31, 0.10);
+}
+
+.dot {
+  display: inline-block;
+  width: 4px;
+  height: 4px;
+  background-color: rgba(255, 255, 255, 0.70);
+  border-radius: 50%;
+  margin-right: 8px;
+}

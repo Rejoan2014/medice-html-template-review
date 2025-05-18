@@ -1,0 +1,89 @@
+@use '../../root' as *;
+@use '../../utilities' as *;
+
+.service2 {
+    &-card {
+        background: $bg-color;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        padding: 30px;
+        margin-bottom: 30px;
+        @include breakpoint (xxxl){
+            width: 420px;
+        }
+
+        @include breakpoint (max-xsmall){
+            gap: 20px;
+            padding: 19px;
+        }
+        @include breakpoint (max-xxsmall){
+            padding: 22px;
+        }
+
+        &__text {
+            color: $title-color;
+            font-family: $body-font;
+            font-size: 22px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 24px; 
+            width: 200px;
+            @include breakpoint (max-xsmall){
+                font-size: 20px;
+            }
+
+            span {
+                color: $theme-color2;
+            }
+        }
+        &__icon {
+            @include breakpoint (max-xsmall){
+                width: 20%;
+            }
+        }
+        &__link {
+
+            &:hover {
+                svg {
+                    g {
+                        rect {
+                            fill: $theme-color;  
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &-btn {
+        display: inline-flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: $title-color;
+        text-align: center;
+        font-family: $body-font;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 22px;
+        padding: 65px 60px;
+        border: 1px solid rgba(31, 31, 31, 0.16);
+        border-radius: 999px;
+        width: 200px;
+        height: 200px;
+        span {
+            padding-top: 14px;
+        }
+        &:hover {
+            color: $white;
+            background-color: $theme-color;
+            @include transition;
+            svg path {
+                stroke: $white;
+                @include transition;
+            }
+        }
+    }
+}

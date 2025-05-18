@@ -1,0 +1,81 @@
+@use '../../root' as *;
+@use '../../utilities' as *;
+
+.project3 {
+    border-radius: 20px;
+    background: $bg-color;
+    &-card {
+        position: relative;
+        display: flex;
+        align-items: center;
+
+        &__thumb {
+            position: relative;
+            flex: none;
+            border-radius: 10px;
+            @include breakpoint (max-xs){
+                display: none;
+            }
+            img {
+                border-radius: 10px;
+            }
+        }
+        &-content {
+            padding: 40px 24px 40px 24px;
+            @include breakpoint (max-xxl){
+                padding: 30px 20px 30px 20px;
+            }
+            @include breakpoint (max-xl){
+                padding: 20px 12px 20px 12px;
+            }
+            @include breakpoint (max-lg){
+                padding: 40px 24px 40px 24px;
+            }
+            @include breakpoint (max-xs){
+                border: 1px dashed rgba(31, 31, 31, 0.12);
+                border-radius: 10px;
+            }
+
+            &__numb {
+                color: rgba(31, 31, 31, 0.80);
+                font-family: $body-font;
+                font-size: 30px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 26px; 
+                padding-bottom: 20px;
+                margin-bottom: 20px;
+                border-bottom: 1px dashed rgba(31, 31, 31, 0.12);
+                @include breakpoint (max-md){
+                    padding-bottom: 20px;
+                }
+                @include breakpoint (max-xs){
+                    border: none;
+                }
+            }
+            &__title {
+                color: $title-color;
+                font-family: $body-font;
+                font-size: 22px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 28px; 
+                padding-bottom: 10px;
+            }
+            &__desc {
+                @include breakpoint (xxl){
+                    padding-right: 28px;
+                }
+                p {
+                    color: $title-color;
+                    font-family: $body-font;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 26px;
+                    opacity: 0.7;
+                }
+            }
+        }
+    }
+}

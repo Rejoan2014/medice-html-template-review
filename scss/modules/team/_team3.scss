@@ -1,0 +1,157 @@
+@use '../../root' as *;
+@use '../../utilities' as *;
+
+.team3 {
+    &__thumb {
+            border-radius: 10px;
+        img {
+            border-radius: 10px;
+        }
+    }
+    &-content {
+        padding-left: 0px;
+        @include breakpoint (xl) {
+            padding-left: 40px;
+        } 
+        &__label {
+            display: inline-flex;
+            padding: 12px 26px 11px 26px;
+            justify-content: center;
+            align-items: center;
+            gap: 12px;
+            border-radius: 4px;
+            background: #4D7B6B;
+            color: $white;
+            font-family: $body-font;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            margin-bottom: 30px;
+        }
+        &__name {
+            color: $title-color;
+            font-family: $body-font;
+            font-size: 60px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 66px; 
+            padding-bottom: 25px;
+            @include breakpoint (max-xl) {
+                font-size: 45px;
+                line-height: 50px;
+            }
+            @include breakpoint (max-md) {
+                font-size: 35px;
+                line-height: 35px;
+            }
+            @include breakpoint (max-sm) {
+                font-size: 30px;
+                line-height: 40px;
+            }
+        }
+        &__desc {
+            color: $title-color;
+            font-family: $body-font;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 26px; 
+            opacity: 0.7;
+            border-bottom: 1px solid rgba(31, 31, 31, 0.12);
+            padding-bottom: 32px;
+            margin-bottom: 25px;
+        }
+        &__social-title {
+            color: $title-color;
+            font-family: $body-font;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 34px; 
+            padding-bottom: 20px;
+        }
+        .global-social5 {
+            justify-content: start;
+            padding-bottom: 32px;
+        }
+    }
+    &__profile-title {
+        color: $title-color;
+        font-family: $body-font;
+        font-size: 50px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 66px; /* 132% */
+        padding-bottom: 22px;
+        padding-top: 66px;
+        @include breakpoint (max-xl){
+            font-size: 45px;
+            line-height: 50px;
+            padding-top: 0px;
+            padding-bottom: 15px;
+        }
+        @include breakpoint (max-md) {
+            font-size: 35px;
+            line-height: 35px;
+        }
+        @include breakpoint (max-sm) {
+            font-size: 30px;
+            line-height: 40px;
+        }
+    }
+    &__profile-desc {
+        color: $title-color;
+        font-family: $body-font;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 28px; /* 155.556% */
+        opacity: 0.7;
+        padding-bottom: 25px;
+
+    }
+    &-checklist {
+        padding-left: 0px;
+        @include breakpoint (lg){
+            padding-left: 40px;
+        }
+        @include breakpoint (xxxl){
+            padding-left: 200px;
+        }
+        &__title {
+            color: $title-color;
+            font-family: $body-font;
+            font-size: 30px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 66px; 
+        }
+        &-item {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            &__text {
+                color: $title-color;
+                font-feature-settings: 'case' on, 'cpsp' on;
+                font-family: $body-font;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 34px;
+                opacity: 0.7;
+            }
+        }
+    }
+    &-progress {
+        &__title {
+            color: $title-color;
+            font-family: $body-font;
+            font-size: 30px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 40px;
+        }
+    }
+
+}

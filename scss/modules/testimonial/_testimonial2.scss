@@ -1,0 +1,88 @@
+@use '../../root' as *;
+@use '../../utilities' as *;
+
+.testimonial2 {
+  &-card {
+      display: flex;
+      justify-content: space-between;
+      align-items: center; 
+      background: $bg-color;
+      border-radius: 0px 10px 10px 0px;
+      @include breakpoint (max-xl){
+        border-radius: 10px;
+      }
+      &__thumb {
+        flex: none;
+        border-radius: 10px 0px 0px 10px;
+        img {
+          border-radius: 10px 0px 0px 10px;
+        }
+        @include breakpoint (max-xl){
+          display: none;
+        }
+      }
+
+      &-content {
+        padding: 77px 90px 60px 60px;
+        border-right: 1px solid rgba(31, 31, 31, 0.10);
+        @include breakpoint (max-xxl){
+          padding: 43px 60px 60px 60px;
+        }
+        @include breakpoint (max-md){
+          padding: 43px 40px 60px 40px;
+        }
+        @include breakpoint (max-xs){
+          padding: 30px 30px 30px 30px;
+        }
+        &-header {
+            display: flex;
+            justify-content: space-between;
+            padding-bottom: 20px;
+            @include breakpoint (max-sm){
+                flex-direction: column;
+                width: fit-content;
+            }
+            &__star {
+                i {
+                    color: #FFB34E;
+                    font-size: 18px;
+                    font-style: normal;
+                    font-weight: 900;
+                    line-height: normal;
+                }
+            }
+        }
+        &__desc {
+          color: $title-color;
+          font-family: $body-font;
+          font-size: 18px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 34px; /* 188.889% */
+          opacity: 0.7;
+          padding-bottom: 54px;
+        }
+      }
+      &-btn {
+        width: 940px;
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        @include breakpoint (max-xl2){
+          width: 618px;
+          height: 300px;
+        }
+        @include breakpoint (max-md){
+          width: 700px;
+          height: 300px;
+        }
+        @include breakpoint (max-sm){
+          display: none;
+        }
+      }
+  }
+}
+
+  

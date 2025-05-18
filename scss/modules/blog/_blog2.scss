@@ -1,0 +1,85 @@
+@use '../../root' as *;
+@use '../../utilities' as *;
+
+.blog2 {
+    background: $bg-color;
+    &-card {
+        position: relative;
+        background: $white;
+        box-shadow: 0px 10px 40px 0px rgba(31, 31, 31, 0.20);
+        padding: 20px;
+        &__thumb {
+            position: relative;
+            img {
+                width: 100%;
+            }
+            &-date {
+                padding: 18px 20px;
+                background: $title-color2;
+                position: absolute;
+                right: 0;
+                top: 0;
+                h3 {
+                    color: $title-color;
+                    text-align: center;
+                    font-family: $body-font;
+                    font-size: 44px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: 24px; /* 54.545% */
+                }
+                span {
+                    color: $title-color;
+                    font-family: $body-font;
+                    font-size: 18px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 24px;
+                }
+            }
+        }
+        &-content {
+            &-meta {
+                padding-top: 20px;
+                margin-top: 34px;
+                border-top: 1px solid rgba(31, 31, 31, 0.14);
+                display: flex;
+                gap: 25px;
+                color: $title-color;
+                font-family: $body-font;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+                opacity: 0.6;
+                @include breakpoint (max-xs) {
+                    flex-wrap: wrap;
+                    row-gap: 10px;
+                }
+                img {
+                    padding-right: 6px;
+                }
+            }
+            &__title{
+                padding-bottom: 15px;
+                padding-top: 18px;
+                color: $title-color;
+                font-family: $body-font;
+                font-size: 24px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 34px; 
+            }
+            &__desc {
+                padding-right: 5px;   
+                color: $title-color;
+                font-family: $body-font;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 26px; 
+                opacity: 0.7;          
+            }
+        }
+    }
+}

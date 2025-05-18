@@ -1,0 +1,129 @@
+@use '../../root' as *;
+@use '../../utilities' as *;
+
+.wcu1 {
+  position: relative;
+  border-radius: 0px 20px 20px 0px;
+  background: $bg-color;
+  &__video-btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9;
+    @include breakpoint (max-lg) {
+      display: none;
+    }
+  }
+  &-thumb {
+      position: relative;
+      img {
+        width: 100%;
+        display: block;
+        @include breakpoint (max-xxxl){
+          aspect-ratio: 1;
+        }
+        @include breakpoint (max-lg){
+          aspect-ratio: auto;
+        }
+      }
+      
+  }
+  &-content {
+      padding-top: 30px;
+      padding-left: 94px;
+      @include breakpoint (max-xl) {
+        padding-top: 15px;
+        padding-left: 47px;
+      }
+      @include breakpoint (max-xs) {
+        padding-top: 10px;
+        padding-left: 20px;
+      }
+      &-checklist {
+          padding-bottom: 48px;
+          &-item {
+              display: flex;
+              align-items: center;
+              gap: 16px;
+              &__text {
+                color: rgba(31, 31, 31, 0.70);
+                font-family: $body-font;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 44px; /* 275% */
+              }
+          }
+      }
+  }
+}
+
+.wcu2 {
+  &-card {
+    position: relative;
+    z-index: 9;
+    padding: 80px 80px;
+    background: $bg-color;
+    @include breakpoint (max-xl){
+      padding: 35px 30px;
+    }
+    &__subtitle {
+      display: inline-flex;
+      gap: 5px;
+      border-radius: 100px;
+      border: 1px solid rgba(31, 31, 31, 0.12);
+      padding: 10px 26px;
+      color: $title-color;
+      font-family: $body-font;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+      margin-bottom: 24px;
+    }
+    &__title {
+      color: $title-color;
+      font-family: $body-font;
+      font-size: 40px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 50px;
+      padding-bottom: 30px;
+      @include breakpoint (max-xs){
+        font-size: 32px;
+        line-height: 42px;
+      }
+
+      span {
+        color: $theme-color2;
+        font-family: $body-font;
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 50px;
+        @include breakpoint (max-xs){
+          font-size: 32px;
+          line-height: 42px;
+        }
+      }
+    }
+    &__desc {
+      color: $title-color;
+      font-family: $body-font;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 26px;
+      opacity: 0.7;
+      padding-bottom: 48px;
+    }
+  }
+  &-thumb {
+    margin-left: -440px;
+    @include breakpoint (max-xl){
+      margin-left: -360px;
+  }
+  }
+}
+  

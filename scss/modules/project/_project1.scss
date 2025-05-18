@@ -1,0 +1,171 @@
+@use '../../root' as *;
+@use '../../utilities' as *;
+
+.project1 {
+    position: relative;
+    overflow: hidden;
+    &__thumb {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        z-index: 1;
+
+        &::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(180deg, rgba(70, 78, 61, 0.20) 0%, #464E3D 111.13%);
+            z-index: 2;
+            pointer-events: none;
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            position: relative;
+            z-index: 1;
+        }
+    }
+    .section-top {
+        position: relative;
+        z-index: 5;
+    }
+    &-card {
+        position: relative;
+        z-index: 5;
+        margin-bottom: 30px;
+        padding: 75px 50px;
+        background: rgba(70, 78, 61, 0.60);
+        backdrop-filter: blur(3px);
+        &__title {
+            color: #FFF;
+            font-family: Roboto;
+            font-size: 30px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 38px; /* 126.667% */
+            padding-bottom: 30px;
+            max-width: 376px;
+            span {
+                color: #C5ED82;
+            }
+        }
+        &__text {
+            display: flex;
+            align-items: center;
+            color: #FFF;
+            font-family: Roboto;
+            font-size: 15px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 34px; /* 226.667% */
+            text-transform: uppercase;
+        }
+   }
+   &-card2 {
+        position: relative;
+        z-index: 5;
+        padding: 75px 50px;
+        background: rgba(33, 39, 25, 0.30);
+        &__thumb {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            z-index: 0;
+            @include breakpoint (max-md){
+                display: none;
+            }
+        }
+        &-header {
+            position: relative;
+            z-index: 4;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            padding-bottom: 35px;
+            &__text {
+                p {
+                    color: #FFF;
+                    font-family: Roboto;
+                    font-size: 18px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 34px; /* 188.889% */
+                }
+                .list {
+                    display: flex;
+                    gap: 10px;
+                    color: $white;
+                    ul {
+                        display: flex;
+                        i {
+                            color: #C5ED82;
+                        }
+                    }
+                }
+            }
+        }
+        &__title {
+            position: relative;
+            z-index: 4;
+            color: #FFF;
+            font-family: Roboto;
+            font-size: 30px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 38px; 
+            max-width: 345px;
+        }
+   }
+   &-card3 {
+    position: relative;
+    z-index: 5;
+    padding: 75px 50px;
+    background: rgba(70, 78, 61, 0.60);
+    backdrop-filter: blur(3px);
+    &__icon {
+        padding-bottom: 100px;
+    }
+    &__subtitle {
+        color: #FFF;
+        font-family: Roboto;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        text-transform: uppercase;
+        padding-bottom: 20px;
+    }
+    &__title {
+        color: #FFF;
+        font-family: Roboto;
+        font-size: 34px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 44px; /* 129.412% */
+        padding-bottom: 55px;
+        span {
+            color: #C5ED82;
+        }
+    }
+    &-thumb {
+        display: flex;
+        gap: 15px;
+        @include breakpoint (max-sm){
+            flex-direction: column;
+        }
+    }
+    &__text {
+        padding-top: 15px;
+        color: rgba(255, 255, 255, 0.70);
+        font-family: Roboto;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        text-transform: uppercase;
+    }
+   }
+}

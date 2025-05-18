@@ -1,0 +1,138 @@
+@use '../../root' as *;
+@use '../../utilities' as *;
+
+.about1 {
+    position: relative;
+    border-radius: 0px 0px 20px 20px;
+    background: linear-gradient(180deg, #FFF 0%, #EBF3ED 100%);   
+    &__shape {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        @include breakpoint (max-xxl){
+            display: none;
+        }
+    }
+    &-thumb {
+        position: relative;
+        &__img {
+            position: relative;
+            z-index: 5;
+            @include breakpoint (max-xl){
+                text-align: center;
+            }
+        }
+        &-badge {
+            position: absolute;
+            z-index: 7;
+            right: 15.5%;
+            bottom: 9.5%;
+            width: 195px;
+            @include breakpoint (max-xxxl){
+                right: 13.5%;
+            }
+            @include breakpoint (max-xxl){
+                right: 0;
+            }
+            @include breakpoint (max-xl){
+                right: 10.5%;
+            }
+            @include breakpoint (max-md){
+                right: 0%;
+            }
+            @include breakpoint (max-sm){
+                bottom: 8%;
+                width: 147px;
+            }
+            @include breakpoint (max-xsmall){
+                bottom: 10%;
+            }
+            @include breakpoint (max-xxsmall){
+                bottom: 14%;
+            }
+            &-shape {
+                position: relative;
+                img {
+                    position: absolute;
+                    bottom: -49%;
+                    @include breakpoint (mx-sm){
+                        position: absolute;
+                        bottom: -38%;
+                    }
+                }
+                &-content {
+                    margin-left: 42px;
+                    @include breakpoint (max-sm){
+                        margin-left: 20px;
+                    }
+                    position: relative;
+                    display: inline-flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    &__title {
+                        color: $title-color;
+                        font-family: $body-font;
+                        font-size: 100px;
+                        font-style: normal;
+                        font-weight: 700;
+                        line-height: 56px; /* 56% */
+                        letter-spacing: -10px; 
+                        padding-bottom: 20px;
+                        @include breakpoint (max-sm){
+                            font-size: 65px;
+                            line-height: 35px;
+                        }
+                    }
+                    &__desc {
+                        color: rgba(31, 31, 31, 0.70);
+                        font-family: $body-font;
+                        text-align: center;
+                        font-size: 16px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: 24px; /* 150% */
+                        text-transform: uppercase;
+                    }
+                }
+            }
+        }
+        &__text {
+            position: absolute;
+            top: 15px;
+            left: -6%;
+            z-index: 1;
+            @include breakpoint (max-sm){
+                display: none;
+            }
+        }
+    }
+    &-content {
+        padding-top: 30px;
+        @include breakpoint (max-xl) {
+            padding-top: 20px;
+        }
+        &-checklist {
+            border-top: 1px solid rgba(31, 31, 31, 0.12);
+            padding-top: 30px;
+            padding-bottom: 48px;
+            &-item {
+                display: flex;
+                align-items: center;
+                gap: 16px;
+                &__text {
+                    color: $title-color;
+                    font-feature-settings: 'case' on, 'cpsp' on;
+                    font-family: $body-font;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 34px;
+                    opacity: 0.7;
+                }
+            }
+        }
+    }
+}
+
+  
