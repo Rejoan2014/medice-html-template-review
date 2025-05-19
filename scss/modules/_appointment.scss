@@ -53,16 +53,16 @@
                 line-height: 56px; /* 112% */
 
                 @include breakpoint (max-md){
-                    padding-bottom: 21px;
-                    margin-bottom: 19px;
-                    font-size: 45px;
-                    line-height: 45px;
+                    padding-bottom: 10px;
+                    margin-bottom: 10px;
+                    font-size: 42px;
+                    line-height: 50px;
                 }
                 @include breakpoint (max-sm){
                     padding-bottom: 21px;
                     margin-bottom: 7px;
                     font-size: 34px;
-                    line-height: 28px;
+                    line-height: 40px;
                 }
             }
             &__text {
@@ -76,12 +76,11 @@
             }
             .fancy-wrap {
                 display: flex;
-                gap: 60px;
+                column-gap: 60px;
                 @include breakpoint (max-md){
-                    gap: 25px;
                     flex-direction: column;
                 }
-                @include breakpoint (max-xs){
+                @include breakpoint (max-xsmall){
                   display: none;
                 }
                 .fancy-box1 {

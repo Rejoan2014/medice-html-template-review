@@ -74,12 +74,16 @@
                 font-weight: 500;
                 line-height: normal;
 
-                img {
+                i {
                     padding-left: 5px;
+                    color: $black;
+                }
+                &:hover {
+                    i {
+                        color: $theme-color;
+                    }
                 }
             }
-        }
-        &:hover {
         }
     }
 }

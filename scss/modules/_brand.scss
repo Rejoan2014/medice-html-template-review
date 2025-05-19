@@ -4,13 +4,37 @@
 
 .brandLogo1 {
     margin: 50px 0;
+    &-slider {
+        &__thumb {
+            svg {
+                g path {
+                    fill: #1F1F1F;
+                    opacity: 0.2;
+                }
+            }
+        }
+    }
 }
 .brandLogo2 {
     position: relative;
     z-index: 9;
     margin-bottom: -69px;
     &-slider {
+        &__thumb {
+            svg {
+                g path {
+                    fill: #1F1F1F;
+                    opacity: 0.2;
+                }
+            }
+        }
         padding: 30px 80px;
-         background: $title-color2;
+        background: $title-color2;
+        @include breakpoint (max-md){
+            padding: 30px 40px;
+        }
+        @include breakpoint (max-sm){
+            padding: 30px 30px;
+        }
     }
 }

@@ -14,6 +14,9 @@
         }
         &-content {
             padding: 0 40px 40px;
+            @include breakpoint (max-md) {
+                padding: 30px;
+            }
             &-meta {
                 display: flex;
                 align-items: center;
@@ -26,7 +29,14 @@
                 font-style: normal;
                 font-weight: 500;
                 line-height: 26px; /* 162.5% */
-                @include breakpoint (max-xs) {
+                @include breakpoint (max-xxl) {
+                    gap: 15px;
+                }
+                @include breakpoint (max-md) {
+                    gap: 10px;
+                    padding-top: 0px;
+                }
+                @include breakpoint (max-sm) {
                     flex-wrap: wrap;
                     row-gap: 10px;
                 }
@@ -37,6 +47,9 @@
                     display: flex;
                     align-items: center;
                     gap: 7px;
+                    @include breakpoint (max-xl) {
+                        display: none;
+                    }
                 }
                 &__care {
                     display: flex;
@@ -88,7 +101,7 @@
             border-radius: 10px;
             background: #EBF3ED;
             @include breakpoint (max-xs){
-                padding: 6px 28px 50px;
+                padding: 25px 28px 50px;
             }
             img {
                 padding-bottom: 21px;

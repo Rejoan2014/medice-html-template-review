@@ -138,13 +138,13 @@
                 align-items: self-start;
                 gap: 25px;
             }
-            &__link {
+            &-link {
 
                 img {
                     padding-right: 14px;
                 }
 
-                span {
+                &__text {
                     color: $white;
                     font-family: $body-font;
                     font-size: 20px;

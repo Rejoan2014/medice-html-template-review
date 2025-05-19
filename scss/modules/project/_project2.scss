@@ -10,7 +10,7 @@
             width: 100%;
         }
         @include breakpoint (max-xl){
-            aspect-ratio: 1/1.4;
+            aspect-ratio: 1/1.297;
         }
         @include breakpoint (max-lg){
             aspect-ratio: 1;
@@ -24,6 +24,9 @@
         padding: 70px 74px;
         @include breakpoint (max-xxl){
             padding: 49px 53px;
+        }
+        @include breakpoint (max-xl){
+            padding: 50px 53px;
         }
         @include breakpoint (max-md){
             padding: 30px 30px;
