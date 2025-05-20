@@ -11727,6 +11727,7 @@ img {
   background: var(--white);
   position: relative;
   z-index: 9;
+  padding-bottom: 100px;
 }
 .footer1-bottom-info {
   display: flex;
@@ -12002,6 +12003,7 @@ img {
   background: var(--bg6);
   position: relative;
   z-index: 9;
+  padding-bottom: 90px;
 }
 .footer2-bottom-info {
   display: flex;
