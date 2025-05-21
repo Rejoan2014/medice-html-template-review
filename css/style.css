@@ -11793,6 +11793,9 @@ img {
 .footer1-bottom-info__links a:hover {
   color: var(--theme);
 }
+.footer1-bottom-info__links span {
+  padding-right: 15px;
+}
 
 /*----------------------------------------------
     # Footer style here
@@ -12068,4 +12071,8 @@ img {
 }
 .footer2-bottom-info__links a:hover {
   color: white;
+}
+.footer2-bottom-info__links span {
+  padding-right: 15px;
+  color: var(--white);
 }/*# sourceMappingURL=style.css.map */
