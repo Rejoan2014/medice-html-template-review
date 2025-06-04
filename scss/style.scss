@@ -48,7 +48,9 @@ Description: Medice - Health & Medical HTML Template
 @use "./modules/common/widget";   
 
 /* 2. Header */
-@use "./modules/header";
+@use "./modules/header/header";
+@use "./modules/header/header-2";
+@use "./modules/header/mobile-menu";
 
 /* 3. Hero */
 @use "./modules/hero/hero1";
@@ -61,6 +63,9 @@ Description: Medice - Health & Medical HTML Template
 
 /* 5. Meanmenu */
 @use "./modules/meanmenu";
+
+/* 5. Offcanvas */
+@use "./modules/offcanvas";
   
 /* 6. Title */
 @use "./modules/title";

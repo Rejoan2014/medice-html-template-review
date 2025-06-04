@@ -1,6 +1,8 @@
 (function ($) {
   "use strict";
 
+  var windowOn = $(window);
+
   $(document).ready(function () {
 
   /*-----------------------------------
@@ -17,130 +19,52 @@
     });
 
 
-    /*---------- Mobile Menu  ----------*/
-    $.fn.globalmobilemenu = function (options) {
-      var opt = $.extend(
-        {
-          menuToggleBtn: ".global-menu-toggle",
-          bodyToggleClass: "global-body-visible",
-          subMenuClass: "global-submenu",
-          subMenuParent: "menu-item-has-children",
-          globalSubMenuParent: "menu-item-has-children",
-          subMenuParentToggle: "global-active",
-          meanExpandClass: "global-mean-expand",
-          appendElement: '<span class="global-mean-expand"></span>',
-          subMenuToggleClass: "global-open",
-          toggleSpeed: 400,
-        },
-        options
-      );
-
-      return this.each(function () {
-        var menu = $(this); // Select menu
-
-        // Menu Show & Hide
-        function menuToggle() {
-          menu.toggleClass(opt.bodyToggleClass);
-
-          // collapse submenu on menu hide or show
-          var subMenu = "." + opt.subMenuClass;
-          $(subMenu).each(function () {
-            if ($(this).hasClass(opt.subMenuToggleClass)) {
-              $(this).removeClass(opt.subMenuToggleClass);
-              $(this).css("display", "none");
-              $(this).parent().removeClass(opt.subMenuParentToggle);
-            }
-          });
-        }
-
-        // Class Set Up for every submenu
-        menu.find("." + opt.subMenuParent).each(function () {
-          var submenu = $(this).find("ul");
-          submenu.addClass(opt.subMenuClass);
-          submenu.css("display", "none");
-          $(this).addClass(opt.subMenuParent);
-          $(this).addClass(opt.globalSubMenuParent); // Add menu-item-has-children class
-          $(this).children("a").append(opt.appendElement);
-        });
-
-        // Toggle Submenu
-        function toggleDropDown($element) {
-          var submenu = $element.children("ul");
-          if (submenu.length > 0) {
-            $element.toggleClass(opt.subMenuParentToggle);
-            submenu.slideToggle(opt.toggleSpeed);
-            submenu.toggleClass(opt.subMenuToggleClass);
-          }
-        }
-
-        // Submenu toggle Button
-        var itemHasChildren = "." + opt.globalSubMenuParent + " > a";
-        $(itemHasChildren).each(function () {
-          $(this).on("click", function (e) {
-            e.preventDefault();
-            toggleDropDown($(this).parent());
-          });
-        });
-
-        // Menu Show & Hide On Toggle Btn click
-        $(opt.menuToggleBtn).each(function () {
-          $(this).on("click", function () {
-            menuToggle();
-          });
-        });
-
-        // Hide Menu On outside click
-        menu.on("click", function (e) {
-          e.stopPropagation();
-          menuToggle();
-        });
-
-
-        // Stop Hide full menu on menu click
-        menu.on("click", function (e) {
-          e.stopPropagation();
-        });
-
-        // Prevent submenu from hiding when clicking inside the menu
-        menu.find("div").on("click", function (e) {
-          e.stopPropagation();
-        });
+  //>> Mobile Menu Js Start <<//
+      $('#mobile-menu').meanmenu({
+          meanMenuContainer: '.mobile-menu',
+          meanScreenWidth: "1199",
+          meanExpand: ['<i class="far fa-plus"></i>'],
       });
-    };
+        
 
-    $(".global-menu-wrapper").globalmobilemenu();
+      //>> Sidebar Toggle Js Start <<//
+      $(".offcanvas__close,.offcanvas__overlay").on("click", function() {
+          $(".offcanvas__info").removeClass("info-open");
+          $(".offcanvas__overlay").removeClass("overlay-open");
+      });
+      $(".sidebar__toggle").on("click", function() {
+          $(".offcanvas__info").addClass("info-open");
+          $(".offcanvas__overlay").addClass("overlay-open");
+      });
 
 
+      //>> Body Overlay Js Start <<//
+      $(".body-overlay").on("click", function() {
+          $(".offcanvas__area").removeClass("offcanvas-opened");
+          $(".df-search-area").removeClass("opened");;
+          $(".body-overlay").removeClass("opened");
+      });
 
-    /*---------- Sticky fix ----------*/
-    $(window).scroll(function () {
-      var topPos = $(this).scrollTop();
-      if (topPos > 10) {
-        $('.sticky-wrapper').addClass('sticky');
-        $('.category-menu').addClass('close-category');
-      } else {
-        $('.sticky-wrapper').removeClass('sticky')
-        $('.category-menu').removeClass('close-category');
-      }
-    })
 
-    $(window).scroll(function () {
-      var topPos = $(this).scrollTop();
-      if (topPos > 10) {
-        $('.sticky-wrapper2').addClass('sticky');
-        $('.category-menu').addClass('close-category');
-      } else {
-        $('.sticky-wrapper2').removeClass('sticky')
-        $('.category-menu').removeClass('close-category');
-      }
-    })
+      //>> Sticky Menu <<//
+      windowOn.on('scroll', function () {
+          var scroll = windowOn.scrollTop();
+          if (scroll < 300) {
+          $("#header-sticky").removeClass("sticky");
+          } else {
+          $("#header-sticky").addClass("sticky");
+          }
+      });
 
-    // After
-    $('.menu-expand').on('click', function (e) {
-      e.preventDefault();
-      $('.category-menu').toggleClass('open-category');
-    });
-
+        //>> offcanvas bar <<//
+      $(".tp-offcanvas-toogle").on('click', function(){
+          $(".tp-offcanvas").addClass("tp-offcanvas-open");
+          $(".tp-offcanvas-overlay").addClass("tp-offcanvas-overlay-open");
+      });
+      $(".tp-offcanvas-close-toggle,.tp-offcanvas-overlay").on('click', function(){
+          $(".tp-offcanvas").removeClass("tp-offcanvas-open");
+          $(".tp-offcanvas-overlay").removeClass("tp-offcanvas-overlay-open");
+      });
 
 
     /*---------- Popup Sidemenu ----------*/
