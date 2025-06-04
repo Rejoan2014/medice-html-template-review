@@ -5429,8 +5429,20 @@ img {
   right: 0;
   width: 100%;
   z-index: 999;
-  padding: 0 100px;
+  padding: 0 230px;
   background-color: var(--white);
+}
+@media (max-width: 1699px) {
+  .header-1 {
+    top: 0;
+    padding: 0 145px;
+  }
+}
+@media (max-width: 1599px) {
+  .header-1 {
+    top: 0;
+    padding: 0 100px;
+  }
 }
 @media (max-width: 1199px) {
   .header-1 {
