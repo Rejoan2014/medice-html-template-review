@@ -79,12 +79,14 @@
 			  text-transform: capitalize;
 			  @include transition;
 			  position: relative;
-			  color: $dark;
+			  color: rgba(31, 31, 31, 0.70);
 			  font-family: $body-font;
-			  font-size: 16px;
-			  font-weight: 600;
-	  
-	  
+			  font-size: 18px;
+			  font-style: normal;
+			  font-weight: 500;
+			  line-height: normal;
+			  text-transform: uppercase;
+
 			  &:before {
 				position: absolute;
 				content: "\f107";
