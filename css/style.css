@@ -3153,7 +3153,6 @@ img {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  opacity: 0.6;
 }
 .form__group2 input::placeholder,
 .form__group2 textarea::placeholder {
@@ -3184,12 +3183,10 @@ img {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  opacity: 0.6;
   appearance: none;
   background-image: none;
 }
-.form__group2 select.form__select::placeholder {
-  color: var(--title);
+.form__group2 select.form__select option[disabled] {
   opacity: 0.6;
 }
 

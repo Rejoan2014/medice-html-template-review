@@ -88,7 +88,6 @@
         font-style: normal;
         font-weight: 400;
         line-height: normal;
-        opacity: 0.6;
   
         &::placeholder {
           color: $title-color;
@@ -121,13 +120,11 @@
         font-style: normal;
         font-weight: 400;
         line-height: normal;
-        opacity: 0.6;
 
         appearance: none; 
         background-image: none; 
         
-        &::placeholder {
-          color: $title-color;
+        option[disabled] {
           opacity: 0.6;
         }
       }
