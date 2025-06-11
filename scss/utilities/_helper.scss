@@ -184,7 +184,7 @@
 .mt-55 {
   margin-top: 55px;
   @include breakpoint (max-xl3){
-    // margin-top: 30px;
+    margin-top: 30px;
   }
 }
 .mt-100 {
@@ -250,6 +250,9 @@
   @include breakpoint (max-md){
     padding: 0 5px;
   }
+}
+.faq2-content {
+  margin: 60px 0 80px;
 }
 
 //Colors
