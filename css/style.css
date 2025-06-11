@@ -3252,6 +3252,62 @@ img {
   height: 189px;
 }
 
+.form__group4 span {
+  color: var(--title);
+  font-weight: 600;
+  text-transform: capitalize;
+}
+.form__group4 input,
+.form__group4 textarea {
+  border: 1px solid rgba(31, 31, 31, 0.1);
+  background: rgba(255, 255, 255, 0);
+  padding: 16px 20px;
+  width: 100%;
+  border-radius: 6px;
+  outline: none;
+  color: var(--title);
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.form__group4 input::placeholder,
+.form__group4 textarea::placeholder {
+  color: var(--title);
+  opacity: 0.6;
+}
+.form__group4 textarea {
+  padding-top: 18px;
+  height: 200px;
+  border-radius: 6px;
+}
+.form__group4--large textarea {
+  height: 189px;
+}
+.form__group4 .form-ctrl {
+  padding: 17px 90px 17px 30px;
+}
+.form__group4 select.form__select {
+  border: 1.5px solid rgba(255, 255, 255, 0.14);
+  background-color: var(--bg5);
+  padding: 16px 20px;
+  width: 100%;
+  border-radius: 6px;
+  outline: none;
+  color: var(--title);
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  appearance: none;
+  background-image: none;
+}
+.form__group4 select.form__select option[disabled] {
+  opacity: 0.6;
+}
+
 .input-icon {
   position: absolute;
   right: 15px;
@@ -7652,6 +7708,26 @@ img {
 }
 .service4-card__thumb img {
   border-radius: 20px;
+}
+.service4-card-content {
+  position: relative;
+}
+.service4-card-content__line {
+  position: absolute;
+  width: 880px;
+  height: 1px;
+  background: rgba(35, 35, 35, 0.1);
+  top: 32.5%;
+}
+@media (max-width: 1399px) {
+  .service4-card-content__line {
+    top: 31.5%;
+  }
+}
+@media (max-width: 1199px) {
+  .service4-card-content__line {
+    display: none;
+  }
 }
 .service4-card-content__title {
   padding-top: 40px;

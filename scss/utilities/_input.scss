@@ -194,6 +194,71 @@
   }  
 }
 
+.form {
+    &__group4 {
+      span {
+        color: $title-color;
+        font-weight: 600;
+        text-transform: capitalize;
+      }
+  
+      input,
+      textarea {
+        border: 1px solid rgba(31, 31, 31, 0.10);
+        background: rgba(255, 255, 255, 0.00);
+        padding: 16px 20px;
+        width: 100%;
+        border-radius: 6px;
+        outline: none;
+        
+        color: $title-color;
+        font-family: $body-font;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+  
+        &::placeholder {
+          color: $title-color;
+          opacity: 0.6;
+        }
+      }
+  
+      textarea {
+        padding-top: 18px;
+        height: 200px;
+        border-radius: 6px;
+      }
+      &--large textarea {
+        height: 189px;
+      }
+      .form-ctrl {
+        padding: 17px 90px 17px 30px;
+      }
+      select.form__select {
+        border: 1.5px solid rgba(255, 255, 255, 0.14);
+        background-color: $bg-color5;
+        padding: 16px 20px;
+        width: 100%;
+        border-radius: 6px;
+        outline: none;
+
+        color: $title-color;
+        font-family: $body-font;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+
+        appearance: none; 
+        background-image: none; 
+        
+        option[disabled] {
+          opacity: 0.6;
+        }
+      }
+    }  
+}
 
 
 .input-icon {
