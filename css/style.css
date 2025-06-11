@@ -3328,7 +3328,7 @@ img {
 
 .back-to-top {
   border-radius: 50%;
-  background-color: var(--theme);
+  background-color: var(--theme2);
   width: 50px;
   height: 50px;
   line-height: 50px;
@@ -3445,7 +3445,7 @@ img {
   }
 }
 .preloader .animation-preloader .txt-loading .letters-loading {
-  color: var(--theme);
+  color: var(--theme2);
   position: relative;
 }
 .preloader .animation-preloader .txt-loading .letters-loading:nth-child(2):before {
@@ -3471,7 +3471,7 @@ img {
 }
 .preloader .animation-preloader .txt-loading .letters-loading::before {
   animation: letters-loading 4s infinite;
-  color: var(--theme);
+  color: var(--theme2);
   content: attr(data-text-preloader);
   left: 0;
   opacity: 0;
@@ -3485,7 +3485,7 @@ img {
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 8px;
-  color: var(--theme);
+  color: var(--theme2);
 }
 .preloader .loader {
   position: fixed;
