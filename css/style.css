@@ -7604,6 +7604,106 @@ img {
   transition: all 0.4s ease-in-out;
 }
 
+.service4-card {
+  background: var(--white);
+  margin-bottom: 40px;
+}
+.service4-card__thumb {
+  border-radius: 20px;
+}
+.service4-card__thumb img {
+  border-radius: 20px;
+}
+.service4-card-content__title {
+  padding-top: 40px;
+  padding-bottom: 15px;
+}
+.service4-card-content__title h5 {
+  color: var(--title);
+  font-family: "Roboto", sans-serif;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 38px; /* 126.667% */
+}
+@media (max-width: 575px) {
+  .service4-card-content__title h5 {
+    font-size: 28px;
+  }
+}
+.service4-card-content__desc {
+  padding-right: 5px;
+}
+.service4-card-content__desc p {
+  color: var(--title);
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+  opacity: 0.7;
+  padding-bottom: 20px;
+}
+.service4-card-content-profile {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+.service4-card-content-profile__thumb {
+  border-radius: 10px;
+}
+.service4-card-content-profile__thumb img {
+  border-radius: 10px;
+}
+.service4-card-content-profile__title {
+  color: var(--title);
+  font-family: "Roboto", sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 34px;
+  padding-bottom: 30px;
+}
+.service4-card-content-profile__desc {
+  padding-bottom: 45px;
+  color: var(--title);
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+  opacity: 0.7;
+}
+.service4-card-content-step__numb {
+  color: #1F1F1F;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+  opacity: 0.7;
+  padding-bottom: 10px;
+}
+.service4-card-content-step__title {
+  color: #1F1F1F;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+  padding-bottom: 16px;
+}
+.service4-card-content-step__icon {
+  padding-bottom: 20px;
+}
+.service4-card-content-step__desc {
+  color: #1F1F1F;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+}
+
 /* 8. Project */
 .project1 {
   position: relative;
