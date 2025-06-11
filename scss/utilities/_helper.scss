@@ -106,6 +106,13 @@
   gap: 30px;
 }
 
+.project3.section-padding {
+  padding: 100px 0;
+  @include breakpoint(max-lg) {
+    padding: 70px 0;
+  }
+}
+
 // Margin
 .mb-120 {
   margin-bottom: 120px;

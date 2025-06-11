@@ -2306,6 +2306,15 @@ span {
   gap: 30px;
 }
 
+.project3.section-padding {
+  padding: 100px 0;
+}
+@media (max-width: 991px) {
+  .project3.section-padding {
+    padding: 70px 0;
+  }
+}
+
 .mb-120 {
   margin-bottom: 120px;
 }
