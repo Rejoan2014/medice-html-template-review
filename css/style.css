@@ -4947,37 +4947,44 @@ img {
   -ms-border-radius: 0 7px 7px 0;
   -o-border-radius: 0 7px 7px 0;
 }
-.widget-card-services ul li {
-  border-radius: 6px;
-  border: 1px solid rgba(38, 38, 38, 0.1);
-  background: var(--white);
-}
 .widget-card-services ul li:not(:last-child) {
   margin-bottom: 12px;
 }
-.widget-card-services ul li:hover {
-  background: var(--theme);
-}
-.widget-card-services ul li:hover a {
-  color: var(--white);
-}
-.widget-card-services ul li:hover a i {
-  color: var(--white);
-}
 .widget-card-services ul li a {
-  padding: 12px 20px;
+  border: 1px solid rgba(31, 31, 31, 0.14);
+  background: rgba(255, 255, 255, 0);
+  padding: 12px 12px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  color: var(--title);
-  font-family: "Plus Jakarta Sans";
+  color: rgba(31, 31, 31, 0.7);
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.widget-card-services ul li a:hover {
+  background-color: var(--theme2);
+  color: var(--white) !important;
+}
+.widget-card-services ul li a:hover svg circle {
+  fill: var(--white);
+}
+.widget-card-services ul li a span > i {
+  padding-right: 13px;
+  color: var(--gray2);
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
-  line-height: 26px;
+  line-height: normal;
 }
 .widget-card-services ul li a i {
-  color: var(--title);
+  color: var(--gray2);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
 }
 .widget-card-services ul li.active {
   background-color: var(--theme);
@@ -5138,6 +5145,28 @@ img {
 .widget-card-tagcloud__list li a:hover {
   color: var(--white);
   background: var(--theme2);
+}
+.widget-card-contact {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.widget-card-contact-info__text {
+  color: #1F1F1F;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding-bottom: 10px;
+}
+.widget-card-contact-info__numb {
+  color: #1F1F1F;
+  font-family: Roboto;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 .widget-card-social__list {
   list-style: none;
