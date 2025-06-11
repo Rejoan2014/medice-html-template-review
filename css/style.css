@@ -5501,7 +5501,7 @@ img {
   font-family: "Roboto", sans-serif;
 }
 .header-wrap .main-menu ul ul li > a:hover {
-  background-color: var(--theme);
+  background-color: #4D7B6B;
   color: var(--white);
 }
 .header-wrap .main-menu ul ul li:last-child a {
