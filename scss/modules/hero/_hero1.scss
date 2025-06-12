@@ -5,8 +5,11 @@
 .hero1 {
     position: relative;
     padding: 156px 0 148px;
-    margin-top: 95px;
+    margin-top: 123px;
     border-radius: 20px;
+    @include breakpoint (max-xl){
+        margin-top: 105px;
+    }
     @include breakpoint (max-sm){
         padding: 110px 0 110px;
     }

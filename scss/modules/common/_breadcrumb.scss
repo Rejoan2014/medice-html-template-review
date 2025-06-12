@@ -7,8 +7,11 @@
     background-color: $title-color;
     padding: 180px 0 165px 0;
     margin: 0 auto;
-    margin-top: 95px;
+    margin-top: 123px;
     border-radius: 20px;
+    @include breakpoint (max-xl){
+        margin-top: 105px;
+    }
 
 
     position: relative;

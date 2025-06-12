@@ -4824,10 +4824,15 @@ img {
   background-color: var(--title);
   padding: 180px 0 165px 0;
   margin: 0 auto;
-  margin-top: 95px;
+  margin-top: 123px;
   border-radius: 20px;
   position: relative;
   overflow: hidden;
+}
+@media (max-width: 1199px) {
+  .breadcrumb {
+    margin-top: 105px;
+  }
 }
 .breadcrumb::before {
   position: absolute;
@@ -5517,7 +5522,6 @@ img {
 
 .header-1 {
   position: absolute;
-  top: 0;
   left: 0;
   right: 0;
   width: 100%;
@@ -5897,8 +5901,13 @@ img {
 .hero1 {
   position: relative;
   padding: 156px 0 148px;
-  margin-top: 95px;
+  margin-top: 123px;
   border-radius: 20px;
+}
+@media (max-width: 1199px) {
+  .hero1 {
+    margin-top: 105px;
+  }
 }
 @media (max-width: 575px) {
   .hero1 {
@@ -6113,12 +6122,18 @@ img {
 .hero2 {
   position: relative;
   padding: 220px 0 148px;
-  margin-top: 85px;
+  margin-top: 170px;
   background: #464E3D;
+}
+@media (max-width: 1199px) {
+  .hero2 {
+    margin-top: 104px;
+    padding: 120px 0 148px;
+  }
 }
 @media (max-width: 991px) {
   .hero2 {
-    padding: 70px 0 82px;
+    padding: 60px 0 82px;
   }
 }
 .hero2__shape1 {
@@ -9875,6 +9890,9 @@ img {
   flex-direction: column;
   gap: 10px;
 }
+.wcu2-sliderBtn svg {
+  border-radius: 64px;
+}
 .wcu2-sliderBtn svg rect {
   fill: var(--theme);
   fill-opacity: 1;
@@ -11682,7 +11700,12 @@ img {
   background: var(--white);
   position: relative;
   z-index: 9;
-  padding-bottom: 100px;
+  padding-bottom: 120px;
+}
+@media (max-width: 1199px) {
+  .footer1-bottom {
+    padding-bottom: 100px;
+  }
 }
 .footer1-bottom-info {
   display: flex;
@@ -11961,7 +11984,12 @@ img {
   background: var(--bg6);
   position: relative;
   z-index: 9;
-  padding-bottom: 90px;
+  padding-bottom: 170px;
+}
+@media (max-width: 1199px) {
+  .footer2-bottom {
+    padding-bottom: 100px;
+  }
 }
 .footer2-bottom-info {
   display: flex;

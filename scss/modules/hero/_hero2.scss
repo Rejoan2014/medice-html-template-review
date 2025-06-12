@@ -5,10 +5,14 @@
 .hero2 {
     position: relative;
     padding: 220px 0 148px;
-    margin-top: 85px;
+    margin-top: 170px;
     background: #464E3D;
+    @include breakpoint (max-xl){
+        margin-top: 104px;
+        padding: 120px 0 148px;
+    }
     @include breakpoint (max-lg){
-        padding: 70px 0 82px;
+        padding: 60px 0 82px;
     }
     &__shape1 {
         position: absolute;
