@@ -123,13 +123,17 @@
                 opacity: 0.6;
             }
             &__email {
-                color: $title-color;
-                font-family: $body-font;
-                font-size: 15px;
-                font-style: normal;
-                font-weight: 400;
-                line-height: normal;
-                opacity: 0.6;
+                padding-bottom: 12px;
+                padding-top: 13px;
+                p {
+                    color: $title-color;
+                    font-family: $body-font;
+                    font-size: 15px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                    opacity: 0.7;
+                }
             }
             &__phone {
                 display: flex;

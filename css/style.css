@@ -5546,7 +5546,7 @@ img {
   display: none;
 }
 .header-1 .header-wrap .main-menu-wrap {
-  margin-left: -65px;
+  margin-left: 0;
 }
 .header-1 .header-wrap .header-right {
   display: -webkit-box;
@@ -10135,13 +10135,17 @@ img {
   opacity: 0.6;
 }
 .team1-card-content__email {
+  padding-bottom: 12px;
+  padding-top: 13px;
+}
+.team1-card-content__email p {
   color: var(--title);
   font-family: "Roboto", sans-serif;
   font-size: 15px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  opacity: 0.6;
+  opacity: 0.7;
 }
 .team1-card-content__phone {
   display: flex;
