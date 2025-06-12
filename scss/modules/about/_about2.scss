@@ -16,7 +16,7 @@
                 padding-top: 25px;
             }
             &__numb {
-                color: $theme-color2;
+                color: $theme-color;
                 font-family: $body-font;
                 font-size: 200px;
                 font-style: normal;
@@ -39,7 +39,7 @@
                 }
             }
             &__text {
-                color: $theme-color2;
+                color: $theme-color;
                 font-family: $body-font;
                 font-size: 18px;
                 font-style: normal;
@@ -85,7 +85,7 @@
                 align-items: center;
                 margin-top: -111px;
                 &__title {
-                    color: $theme-color2;
+                    color: $theme-color;
                     font-family: $body-font;
                     font-size: 160px;
                     font-style: normal;
@@ -138,7 +138,7 @@
                 line-height: 36px;
                 padding-bottom: 45px;
                 span {
-                    color: $theme-color2;
+                    color: $theme-color;
                 }
             }
             &-list {

@@ -45,7 +45,7 @@
             }
 
             .letters-loading {
-                color: $theme-color2;
+                color: $theme-color;
                 position: relative;
 
                 &:nth-child(2):before {
@@ -78,7 +78,7 @@
 
                 &::before {
                     animation: letters-loading 4s infinite;
-                    color: $theme-color2;
+                    color: $theme-color;
                     content: attr(data-text-preloader);
                     left: 0;
                     opacity: 0;
@@ -96,7 +96,7 @@
         font-weight: 600;
         text-transform: uppercase;
         letter-spacing: 8px;
-        color: $theme-color2;
+        color: $theme-color;
     }
 
     .loader {

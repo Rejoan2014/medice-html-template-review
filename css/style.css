@@ -62,8 +62,8 @@ Description: Medice - Health & Medical HTML Template
   --bg4: #F1E6F6;
   --bg5: #D8E3DB;
   --bg6: #464E3D;
-  --theme: #3CA200;
-  --theme2: #4D7B6B;
+  --theme: #4D7B6B;
+  --theme2: #3CA200;
   --theme3: #5D844E;
   --theme4: #996391;
   --box-shadow: 0px -10px 0px 0px #B3D5D3 inset;
@@ -2616,6 +2616,11 @@ span {
   margin-right: 8px;
 }
 
+#smooth-wrapper {
+  width: 95% !important;
+  margin: auto !important;
+}
+
 img {
   max-width: 100%;
   height: auto;
@@ -3045,7 +3050,7 @@ img {
   -o-border-radius: 144px;
 }
 .social-profile ul li {
-  background-color: var(--theme2);
+  background-color: var(--theme);
   margin-bottom: 8px;
   display: block;
   text-align: center;
@@ -3083,7 +3088,7 @@ img {
   transition: all 0.4s ease-in-out;
 }
 .social-profile .plus-btn:hover {
-  background-color: var(--theme2);
+  background-color: var(--theme);
 }
 .social-profile .plus-btn:hover i {
   color: var(--white);
@@ -3106,7 +3111,7 @@ img {
 .form__group input,
 .form__group textarea {
   border: 1.5px solid rgba(255, 255, 255, 0.14);
-  background-color: var(--theme2);
+  background-color: var(--theme);
   padding: 16px 20px;
   width: 100%;
   border-radius: 6px;
@@ -3135,7 +3140,7 @@ img {
 }
 .form__group select.form__select {
   border: 1.5px solid rgba(255, 255, 255, 0.14);
-  background-color: var(--theme2);
+  background-color: var(--theme);
   padding: 16px 20px;
   width: 100%;
   border-radius: 6px;
@@ -3337,7 +3342,7 @@ img {
 
 .back-to-top {
   border-radius: 50%;
-  background-color: var(--theme2);
+  background-color: var(--theme);
   width: 50px;
   height: 50px;
   line-height: 50px;
@@ -3454,7 +3459,7 @@ img {
   }
 }
 .preloader .animation-preloader .txt-loading .letters-loading {
-  color: var(--theme2);
+  color: var(--theme);
   position: relative;
 }
 .preloader .animation-preloader .txt-loading .letters-loading:nth-child(2):before {
@@ -3480,7 +3485,7 @@ img {
 }
 .preloader .animation-preloader .txt-loading .letters-loading::before {
   animation: letters-loading 4s infinite;
-  color: var(--theme2);
+  color: var(--theme);
   content: attr(data-text-preloader);
   left: 0;
   opacity: 0;
@@ -3494,7 +3499,7 @@ img {
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 8px;
-  color: var(--theme2);
+  color: var(--theme);
 }
 .preloader .loader {
   position: fixed;
@@ -4073,7 +4078,7 @@ img {
 }
 .faq-content .accordion-item .accordion-collapse .accordion-body {
   padding: 20px 30px 23px;
-  background-color: var(--theme2);
+  background-color: var(--theme);
   box-shadow: 0px 1px 2px 0px rgba(13, 18, 30, 0.08);
   color: var(--white);
   font-family: "Roboto", sans-serif;
@@ -5000,7 +5005,7 @@ img {
   width: 44px;
   height: 100%;
   border-radius: 0 7px 7px 0;
-  background: var(--theme2);
+  background: var(--theme);
   font-size: 16px;
   text-align: center;
   color: var(--white);
@@ -5030,7 +5035,7 @@ img {
   line-height: normal;
 }
 .widget-card-services ul li a:hover {
-  background-color: var(--theme2);
+  background-color: var(--theme);
   color: var(--white) !important;
 }
 .widget-card-services ul li a:hover svg circle {
@@ -5078,7 +5083,7 @@ img {
   line-height: normal;
 }
 .widget-card-categories ul li a:hover {
-  background-color: var(--theme2);
+  background-color: var(--theme);
   color: var(--white) !important;
 }
 .widget-card-categories ul li a:hover svg circle {
@@ -5209,7 +5214,7 @@ img {
 }
 .widget-card-tagcloud__list li a:hover {
   color: var(--white);
-  background: var(--theme2);
+  background: var(--theme);
 }
 .widget-card-contact {
   display: flex;
@@ -5257,7 +5262,7 @@ img {
 }
 .widget-card-social__list li a:hover {
   color: var(--white);
-  background: var(--theme2);
+  background: var(--theme);
 }
 .widget-getTouch {
   display: flex;
@@ -6243,7 +6248,7 @@ img {
   max-width: 250px;
 }
 .hero2-notice__text h5 {
-  color: var(--theme2);
+  color: var(--theme);
   font-family: "Roboto", sans-serif;
   font-size: 18px;
   font-style: normal;
@@ -6605,7 +6610,7 @@ img {
   }
 }
 .about2-experience-info__numb {
-  color: var(--theme2);
+  color: var(--theme);
   font-family: "Roboto", sans-serif;
   font-size: 200px;
   font-style: normal;
@@ -6632,7 +6637,7 @@ img {
   }
 }
 .about2-experience-info__text {
-  color: var(--theme2);
+  color: var(--theme);
   font-family: "Roboto", sans-serif;
   font-size: 18px;
   font-style: normal;
@@ -6678,7 +6683,7 @@ img {
   margin-top: -111px;
 }
 .about2-card-thumb-info__title {
-  color: var(--theme2);
+  color: var(--theme);
   font-family: "Roboto", sans-serif;
   font-size: 160px;
   font-style: normal;
@@ -6740,7 +6745,7 @@ img {
   padding-bottom: 45px;
 }
 .about2-card-content__title span {
-  color: var(--theme2);
+  color: var(--theme);
 }
 .about2-card-content-list {
   padding-bottom: 35px;
@@ -7355,7 +7360,7 @@ img {
   }
 }
 .section-top__title span {
-  color: var(--theme2);
+  color: var(--theme);
 }
 .section-top__title2 {
   color: var(--title);
@@ -7566,7 +7571,7 @@ img {
   }
 }
 .service2-card__text span {
-  color: var(--theme2);
+  color: var(--theme);
 }
 @media (max-width: 449px) {
   .service2-card__icon {
@@ -9332,7 +9337,7 @@ img {
   font-weight: 500;
   line-height: normal;
   border-radius: 100px;
-  background: var(--theme2);
+  background: var(--theme);
   width: max-content;
   margin-bottom: 30px;
 }
@@ -9439,7 +9444,7 @@ img {
   line-height: normal;
 }
 .blog4-card-content-tagShare-tags__name a:hover {
-  background-color: var(--theme2);
+  background-color: var(--theme);
   color: var(--white);
 }
 .blog4-card-content-tagShare-shareicon {
@@ -9560,7 +9565,7 @@ img {
   background: rgba(255, 255, 255, 0);
 }
 .blog4-card-comment-profile-content__reply .btn:hover {
-  background-color: var(--theme2);
+  background-color: var(--theme);
   color: var(--white);
 }
 .blog4-card-comment-profile-content__reply .btn span {
@@ -9863,7 +9868,7 @@ img {
   }
 }
 .wcu2-card__title span {
-  color: var(--theme2);
+  color: var(--theme);
   font-family: "Roboto", sans-serif;
   font-size: 40px;
   font-style: normal;

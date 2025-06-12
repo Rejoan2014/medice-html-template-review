@@ -52,7 +52,7 @@
           width: 44px;
           height: 100%;
           border-radius: 0 7px 7px 0;
-          background: $theme-color2;
+          background: $theme-color;
           font-size: 16px;
           text-align: center;
           color: $white;
@@ -87,7 +87,7 @@
             font-weight: 500;
             line-height: normal;
             &:hover {
-              background-color: $theme-color2;
+              background-color: $theme-color;
               color: $white !important;
 
               svg circle {
@@ -143,7 +143,7 @@
             font-weight: 500;
             line-height: normal;
             &:hover {
-              background-color: $theme-color2;
+              background-color: $theme-color;
               color: $white !important;
 
               svg circle {
@@ -294,7 +294,7 @@
             background: rgba(255, 255, 255, 0.00);
             &:hover {
               color: $white;
-              background: $theme-color2;
+              background: $theme-color;
 
             } 
           }
@@ -353,7 +353,7 @@
             background: rgba(255, 255, 255, 0.00);
             &:hover {
               color: $white;
-              background: $theme-color2;
+              background: $theme-color;
 
             } 
           }
