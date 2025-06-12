@@ -370,9 +370,3 @@
   width: 96% !important;
   margin: auto !important;
 }
-#smooth-content {
-  padding-bottom: 120px; 
-  @include breakpoint (max-xl){
-    padding-bottom: 100px;
-  }
-}
