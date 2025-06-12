@@ -5522,6 +5522,7 @@ img {
 
 .header-1 {
   position: absolute;
+  top: 0;
   left: 0;
   right: 0;
   width: 100%;
@@ -5564,6 +5565,9 @@ img {
     margin-right: 30px;
     margin-top: 5px;
   }
+}
+.header-1.header-top-fix {
+  top: auto;
 }
 
 .header-style-2 .header-wrap {

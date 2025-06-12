@@ -179,7 +179,7 @@
 
 .header-1{
 	position: absolute;
-	// top: 0;
+	top: 0;
 	left: 0;
 	right: 0;
 	width: 100%;
@@ -215,6 +215,9 @@
 				}
 			}
 		}
+	}
+	&.header-top-fix {
+		top: auto;
 	}
 }
 .header-style-2{
