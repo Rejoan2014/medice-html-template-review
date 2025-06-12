@@ -218,6 +218,9 @@
 	}
 	&.header-top-fix {
 		top: auto;
+		@include breakpoint(max-xl){
+			top: 0;
+		}
 	}
 }
 .header-style-2{

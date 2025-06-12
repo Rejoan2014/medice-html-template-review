@@ -5569,6 +5569,11 @@ img {
 .header-1.header-top-fix {
   top: auto;
 }
+@media (max-width: 1199px) {
+  .header-1.header-top-fix {
+    top: 0;
+  }
+}
 
 .header-style-2 .header-wrap {
   margin-top: 0;
