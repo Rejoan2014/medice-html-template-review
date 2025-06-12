@@ -249,15 +249,7 @@
     padding: 45px 0;
   }
 }
-.body-fix {
-  padding: 0 50px;
-  @include breakpoint (max-xxl){
-    padding: 0 30px;
-  }
-  @include breakpoint (max-md){
-    padding: 0 5px;
-  }
-}
+
 .faq2-content {
   margin: 60px 0 80px;
 }
@@ -375,6 +367,6 @@
 }
 
 #smooth-wrapper {
-  width: 95% !important;
+  width: 96% !important;
   margin: auto !important;
 }

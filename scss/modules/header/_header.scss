@@ -179,28 +179,12 @@
 
 .header-1{
 	position: absolute;
+	top: 0;
 	left: 0;
 	right: 0;
 	width: 100%;
 	z-index: 999;
-	padding: 0 230px;
 	background-color: $white;
-
-	@include breakpoint(max-xl2){
-		top: 0;
-		padding: 0 145px;
-	}
-	@include breakpoint(max-xxxl){
-		top: 0;
-		padding: 0 100px;
-	}
-	@include breakpoint(max-xl){
-		top: 0;
-		padding: 0 40px;
-	}
-	@include breakpoint(max-lg){
-		padding: 0 30px;
-	}
 	.header-wrap{
 		margin-top: 10px;
 		@include breakpoint(max-xl){
@@ -224,7 +208,7 @@
 			@include flexbox();
 			align-items: center;
 			.search{
-				margin-right: 36px;
+				margin-right: 20px;
 				@include breakpoint(max-sm){
 					margin-right: 30px;
 					margin-top: 5px;
